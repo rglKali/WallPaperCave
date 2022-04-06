@@ -14,6 +14,8 @@ soup = BeautifulSoup(responce, 'lxml')
 name = soup.find_all('h1')
 folder = str(name[1])[4:-5]
 
+if not os.path.exists('wallpapers'):
+    os.mkdir('wallpapers')
 if not os.path.exists(f'wallpapers/{folder}'):
     os.mkdir(f'wallpapers/{folder}')
 
