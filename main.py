@@ -16,7 +16,7 @@ window = sg.Window('WallPaperCave Manager', layout)
 
 while True:
     event, values = window.read()
-    print(event, values)
+#   print(event, values)
 
     if event in (None, 'Exit', 'Cancel', 'Exit!'):
         break
